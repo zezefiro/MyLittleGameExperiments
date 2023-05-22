@@ -1,0 +1,93 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://SpaceShooterRedux/Backgrounds/pixil-frame-0.png" type="Texture" id=1]
+[ext_resource path="res://SpaceShooterRedux/Fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 24
+font_data = ExtResource( 2 )
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 2.72076
+margin_top = -1.36038
+margin_right = 2.7207
+margin_bottom = -1.36035
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1282.0
+margin_bottom = 720.0
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 7
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Title" type="Label" parent="."]
+margin_left = 461.823
+margin_top = 165.663
+margin_right = 757.823
+margin_bottom = 342.663
+grow_horizontal = 2
+grow_vertical = 2
+custom_fonts/font = SubResource( 1 )
+text = "Space Shooter
+"
+align = 1
+valign = 1
+autowrap = true
+uppercase = true
+
+[node name="Start" type="Button" parent="."]
+margin_left = 540.847
+margin_top = 315.076
+margin_right = 690.847
+margin_bottom = 365.076
+grow_horizontal = 2
+grow_vertical = 2
+rect_min_size = Vector2( 150, 50 )
+custom_fonts/font = SubResource( 2 )
+text = "Start"
+flat = true
+
+[node name="Continue" type="Button" parent="."]
+margin_left = 543.432
+margin_top = 367.0
+margin_right = 693.432
+margin_bottom = 417.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_min_size = Vector2( 150, 50 )
+custom_fonts/font = SubResource( 2 )
+text = "Continue"
+flat = true
+
+[node name="Options" type="Button" parent="."]
+margin_left = 542.14
+margin_top = 417.508
+margin_right = 692.14
+margin_bottom = 467.508
+grow_horizontal = 2
+grow_vertical = 2
+rect_min_size = Vector2( 150, 50 )
+custom_fonts/font = SubResource( 2 )
+text = "Options"
+flat = true
+
+[node name="Quit" type="Button" parent="."]
+margin_left = 543.432
+margin_top = 468.601
+margin_right = 693.432
+margin_bottom = 518.601
+grow_horizontal = 2
+grow_vertical = 2
+rect_min_size = Vector2( 150, 50 )
+custom_fonts/font = SubResource( 2 )
+text = "Quit"
+flat = true
